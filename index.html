@@ -27,14 +27,12 @@
 <body>
 <main class="app">
 <h1>🧮 HEIVA 계산기</h1>
-<p class="sub">트레이닝 단위 변환과 사칙연산 · 계산 결과를 무게 또는 길이로 전송</p>
 <section>
 <h2>⚖️ 무게 변환</h2>
 <div class="unit-grid"><div class="field"><label for="lb">파운드 (lb)</label><input id="lb" type="number" step="any" inputmode="decimal" placeholder="lb"></div><div class="field"><label for="kg">킬로그램 (kg)</label><input id="kg" type="number" step="any" inputmode="decimal" placeholder="kg"></div></div>
 </section>
 <section class="section" id="mixed-plates">
 <h2>🏋️ 혼합 원판 총중량 계산</h2>
-<p class="hint">kg 원판과 lb 원판을 섞어도 OK! 양쪽에 똑같이 끼우는 기준으로 계산합니다.</p>
 <div class="mix-card">
 <div class="mix-bar">
 <label>바벨 무게<input id="bar-weight" type="number" min="0" step="any" inputmode="decimal" value="20"></label>
@@ -50,7 +48,6 @@
 <section class="section">
 <h2>📏 길이 변환</h2>
 <div class="unit-grid"><div class="field"><label for="inch">인치 (inch)</label><input id="inch" type="number" step="any" inputmode="decimal" placeholder="inch"></div><div class="field"><label for="cm">센티미터 (cm)</label><input id="cm" type="number" step="any" inputmode="decimal" placeholder="cm"></div></div>
-<p class="hint">어느 쪽에 입력해도 반대쪽 값이 자동으로 계산됩니다.</p>
 </section>
 <section class="section">
 <h2>🔢 일반 계산기</h2>
@@ -63,7 +60,6 @@
 <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button><button class="op" data-key="+">+</button>
 <button data-key="0">0</button><button data-key=".">.</button><button class="equal" data-key="=" style="grid-column:span 2">=</button>
 </div><div class="send"><button type="button" data-send="lb">↑ 결과를 lb로 보내기</button><button type="button" data-send="kg">↑ 결과를 kg로 보내기</button><button type="button" data-send="inch">↑ 결과를 inch로 보내기</button><button type="button" data-send="cm">↑ 결과를 cm로 보내기</button></div><p id="send-status" class="send-status" role="status"></p></div>
-<p class="hint">계산 결과는 소수점 둘째 자리까지 표시합니다. (예: 3.33, 2.50)</p>
 </section>
 <p class="foot">1 lb = 0.45359237 kg · 1 inch = 2.54 cm. 모든 계산은 브라우저에서 실행됩니다.</p>
 </main>
